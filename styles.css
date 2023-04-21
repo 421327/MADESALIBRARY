@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+body {
+    position: relative;
+    box-sizing: border-box;
+}
+header {
+    height: 50px;
+    width: 100%;
+    background-color: lime;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+header > h2 {
+    color: black;
+}
+section {
+    margin-top: 50px;
+    margin-left: 5px;
+    height: 800px;
+    width: 100%;
+}
+section li {
+    list-style: none;
+    padding: 2px;
+}
+.content ,.dial {
+    width: 100%;
+    display: flex;
+}
+.dial a {
+    text-decoration: none;
+    width: 50%;
+    background-color: lightgrey;
+    color: black;
+    height: 20px;
+    padding: 5px 5px;
+    text-align: center;
+}
+#Books {
+    width: 50%;
+    background-color: black;
+}
+#Videos {
+    width: 50%;
+    background-color: blue;
+}
+footer {
+    height: 30px;
+    width: 100%;
+    background-color: yellow;
+}
