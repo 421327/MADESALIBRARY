@@ -1,0 +1,94 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+body {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 3px;
+}
+header {
+    height: 50px;
+    width: 100%;
+    background-color: lime;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    border-bottom: 2px solid grey;
+}
+header > h2 {
+    color: black;
+}
+section {
+    margin-top: 50px;
+    height: 800px;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+}
+section li {
+    list-style: none;
+    padding: 2px;
+}
+.dial {
+    width: 100%;
+    display: flex;
+}
+.dial a {
+    text-decoration: none;
+    width: 50%;
+    /*background-color: lightgrey;*/
+    color: black;
+    height: 20px;
+    padding: 5px 5px;
+    text-align: center;
+    font-weight: 900;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 100%;
+    align-items: start;
+    height: 100%;
+    transition: 5s;
+}
+#b,#v {
+    transition: 0.2s linear;
+}
+#b:active,#v:active {
+    background-image: lime;
+    color: white;
+    border-radius: 30px;
+}
+#b:hover , #v:hover{
+    background: linear-gradient(45deg, lime,black);
+    color: white;
+    border-radius: 10px;
+}
+
+#Books {
+    width: 100%;
+    background-color: lightgrey;
+    height: 100%;
+}
+#Videos {
+    width: 100%;
+    background-color: darkgrey;
+    height: 100%;
+}
+p {
+    font-weight: 900;
+}
+footer {
+    height: 30px;
+    width: 100%;
+    background-color: yellow;
+    border-top: 2px solid grey;
+    position: fixed;
+    bottom: 0;
+}
